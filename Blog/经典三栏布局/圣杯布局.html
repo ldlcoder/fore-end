@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			 body {
+				min-width: 550px;  /* 2x LC width + RC width */
+			}
+			#header {
+				height: 50px;
+				color: white;
+				text-align: center;
+				background-color: blue;
+			}
+			#container {
+				text-align: center;
+				padding-right: 150px;
+				padding-left: 200px;
+				background-color: #FAEBD7;
+			}
+			#container .column {
+				float: left;
+				height: 800px;
+				position: relative;
+			}
+			#container #center {
+				width: 100%;
+				background-color: red;
+			}
+			#container #left {
+				margin-left: -100%;
+				width: 200px;
+				right: 200px;
+				background-color: yellow;
+			}
+			#container #right {
+				width: 150px;
+				margin-right: -150px;
+				background-color: green;
+			}
+			#footer {
+				height: 50px;
+				text-align: center;
+				clear: both;
+				background-color: antiquewhite;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h4>header</h4>
+		</div>
+		<div id="container">
+			<div id="center" class="column">center</div>
+			<div id="left" class="column">left</div>
+			<div id="right" class="column">right</div>
+		</div>
+		<div id="footer">
+			<h4>footer</h4>
+		</div>
+	</body>
+</html>
